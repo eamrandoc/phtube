@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <nav class="flex justify-between items-center gap-5 py-5 border-b-2">
+            <div>
+                <img src="./assets/Logo.png" alt="Logo">
+            </div>
+            <div class="w-1/3">
+                <label for="">
+                    <input type="text" id="search-input" class="w-full border-2 outline-double text-center" placeholder="Search Here">
+                </label>
+            </div>
+            <button class="btn btn-active">
+                Sort By View
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="w-1/3 mx-auto py-5">
+            <div class="flex justify-between items-center gap-10" id="categories">
+
+            </div>
+        </section>
+        <section class="container mx-auto ">
+            <div  id="allvideos" class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+
+            </div>
+
+        </section>
+       
+
+    </main>
+    <footer class="flex justify-center items-center">
+        <div class="py-10 space-y-3">
+            <h3 class="text-3xl">This Website is Created By Eamran</h3>
+            <p class="text-center font-bold"><span class="mr-10">Email:eamrandoc@gmail.com</span> <span>Contact: 01707696975</span> </p>
+            <p class="text-center">All Rights Reserved</p>
+        </div>
+    </footer>
+    <img src="" alt="">
+
+    <!-- Open the modal using ID.showModal() method -->
+        <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+        <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
